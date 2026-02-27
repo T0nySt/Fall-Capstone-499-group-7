@@ -1,0 +1,12 @@
+# PostgreSQL (user data, sessions, watchparty metadata, playback progress)
+POSTGRES_HOST=aws-0-us-west-2.pooler.supabase.com
+POSTGRES_PORT=5432
+POSTGRES_USER=postgres.icgrkldfpnjsgsiwoxun
+POSTGRES_PASSWORD=25xj1CZzlBEtEEN3
+POSTGRES_DB=postgres
+
+# MongoDB (video metadata, genres, subtitles)
+MONGO_URI=mongodb+srv://hunshow-admin:gs2ldcAhb4ZxEBYO@hunshow.rrnznkl.mongodb.net/hunshow_mongo?retryWrites=true&w=majority&appName=hunshow
+# Redis (should already configured, but add values here if not already in redis.service.ts)
+REDIS_HOST=localhost
+REDIS_PORT=6379

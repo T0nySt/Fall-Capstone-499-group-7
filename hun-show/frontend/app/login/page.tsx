@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function LoginPage() {
   return (
     <main style={{ padding: 24, maxWidth: 520, margin: "0 auto" }}>
@@ -7,11 +8,23 @@ export default function LoginPage() {
       </p>
 
       <div style={{ display: "grid", gap: 10, marginTop: 12 }}>
-        <input placeholder="Email (.edu)" style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }} />
-        <input placeholder="Password" type="password" style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }} />
-        <button style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }}>
+        <input
+          placeholder="Email (.edu)"
+          style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }}
+        />
+        <input
+          placeholder="Password"
+          type="password"
+          style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }}
+        />
+        <button
+          style={{ padding: 12, borderRadius: 10, border: "1px solid #ccc" }}
+        >
           Sign in
         </button>
+        <Link className="btn btnGhost" href="/register">
+          Register
+        </Link>
       </div>
     </main>
   );

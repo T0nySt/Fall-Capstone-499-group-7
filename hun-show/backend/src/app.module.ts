@@ -5,6 +5,10 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RedisModule } from './redis/redis.module';
+import { UsersModule } from './users/user.module';
+import { SessionsModule } from './sessions/session.module';
+import { WatchpartyModule } from './watchparty/watchparty.module';
+import { PlaybackModule } from './playback/playback.module';
 
 @Module({
   imports: [
@@ -38,6 +42,11 @@ import { RedisModule } from './redis/redis.module';
       }),
       inject: [ConfigService],
     }),
+
+    UsersModule,
+    SessionsModule,
+    WatchpartyModule,
+    PlaybackModule,
   ],
   controllers: [AppController],
   providers: [AppService],
